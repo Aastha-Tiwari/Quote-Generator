@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+body{
+    min-height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #bbc6fa; */
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.quote-container{
+    background-color: #fff;
+    width:700px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.quote{
+    font-size: 26px;
+    min-height: 110px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.author{
+    align-self:self-end;
+}
+button{
+    background-color: #fff;
+    padding:10px 10px;
+    border-radius: 20px;
+    background-color: #177ce5;
+    color:#fff;
+    border:none;
+    width:120px;
+    margin:5px;
+    cursor: pointer;
+}
+button:nth-child(2){
+    background-color: #fff;
+    border:1px solid #177ce5;
+    color:#024e9f
+}
+
+.loader {
+    width: 120px;
+    height: 20px;
+    background: 
+      linear-gradient(#177ce5 0 0) left -40px top 0/40px 20px,
+      linear-gradient(#ddd 0 0) center/100% 50%; 
+    background-repeat: no-repeat;
+    animation: l5 1s infinite linear;
+}
+@keyframes l5 {
+100% {background-position: right -40px top 0,center}
+}
